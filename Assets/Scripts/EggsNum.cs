@@ -4,6 +4,7 @@ using TMPro;
 public class EggsNum : MonoBehaviour
 {
     public TMP_Text scoreText;
+    public TMP_Text scoreText2;
 
     private int score;
 
@@ -15,7 +16,8 @@ public class EggsNum : MonoBehaviour
 
     void UpdateText()
     {
-        scoreText.text = "Score:"+score.ToString();
+        scoreText.text =score.ToString();
+        scoreText2.text =score.ToString();
     }
 
     // ➕ Вызывать при подборе снежинки
